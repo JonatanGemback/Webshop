@@ -77,7 +77,7 @@ div#menyBar {
     width: 33%;
     height: 100%;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
 }
   
 .menyLogga a {
@@ -91,12 +91,6 @@ div#menyBar {
 
 #tsoobText  {
     font-size: xx-large;
-}
-
-.search-container   {
-    display: flex;
-    justify-content: end;
-    width: 25%;
 }
 
 #shoppingCart   {
@@ -202,12 +196,21 @@ div.kläderBar  {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 10%;
 }
 
 .kläder  {
     width: 98%;
     border-radius: 10%;
-    border-style: solid;
+    margin: 1%;
+}
+
+.beskrivning    {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
 }
 
 #infoBakgrund   {
@@ -231,7 +234,7 @@ div.kläderBar  {
 }
 
 .logga{
-    width: 40%;
+    width: 45%;
     background-color: white;
     border-radius: 20%;
 }
@@ -244,7 +247,7 @@ div.kläderBar  {
 
 #instagram  {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 #twitter    {
@@ -257,4 +260,9 @@ div.kläderBar  {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+#fbPlasering    {
+    display: flex;
+    align-items: center;
 }
