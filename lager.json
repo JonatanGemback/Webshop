@@ -1,0 +1,123 @@
+{
+    "artiklar": {
+        "herrar": [
+            {
+                "bild": "img/barnRödKlänning.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING"
+            },
+            {
+                "bild": "img/brunJacka.jpg",
+                "märke": "JACK & JONES",
+                "namn": "BRUN JACKA",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/vitStickadPoloTröja.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/svartJacka.jfif",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/brunStickadPoloTröja.jfif",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/rödJacka.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/vitSkjorta.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            }
+        ],
+        "damer": [
+            {
+                "bild": "img/grönGulKlänning.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/brunKvinnligJacka.webp",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/kavaj.jfif",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/kvinnaSvartTröja.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/rödTjocktröja.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/vitKvinnligSkjorta.webp",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            }
+        ],
+        "barn": [
+            {
+                "bild": "img/bebisKläder.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/barnMjukisKläder.webp",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/dinoTröja.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/barnRödKlänning.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/barnGråTröja.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            },
+            {
+                "bild": "img/barnPyjamas.jpg",
+                "märke": "GANT",
+                "namn": "NEON GRÖN KLÄNNING",
+                "pris": "$70"
+            }
+        ]
+    }
+}
