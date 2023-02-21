@@ -6,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="lager.js"></script>
+    <script src="blandat.js"></script>
     <title>Webshoppen</title>
 </head>
 
-<body>
+<body onload="start()">
     <div id="topMenyBar">
         <div id="topBar">
             <h3 id="fraktText">Fri frakt och retur!</h3>
             <h2 id="rabattText">JUST NU 20-50% RABATT PÅ UTVALDA PRDUKTER!</h2>
             <h3 id="öppetKöpText">100 dagars öppet köp!</h3>
         </div>
+        <div id="artiklar"></div>
         <div id="menyBar">
             <div class="navbar">
                 <a href="#manText" class="menyText">Man</a>
