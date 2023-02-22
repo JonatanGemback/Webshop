@@ -1,6 +1,7 @@
 function skapaArtikel(vara) {
-    const artikel = document.createElement("div");
+    const artikel = document.createElement("a");
     artikel.className = 'kläderMönster';
+    artikel.href = "vara.html?vara=" + vara.namn + "&pris=" + vara.pris;
     const img = document.createElement('img');
     img.className = 'kläder';
     img.src = vara.bild;

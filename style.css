@@ -1,4 +1,4 @@
-body    {
+body {
     margin: 0%;
     scroll-behavior: smooth;
 }
@@ -17,7 +17,7 @@ body    {
     width: 100%;
 }
 
-#fraktText  {
+#fraktText {
     color: white;
 }
 
@@ -25,16 +25,16 @@ body    {
     color: red;
 }
 
-#öppetKöpText   {
+#öppetKöpText {
     color: white;
 }
 
-#meny   {
+#meny {
     display: flex;
     flex-direction: row;
 }
 
-#menyBar    {
+#menyBar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,19 +55,19 @@ div#menyBar {
     flex-direction: row;
     justify-content: space-evenly;
 }
-  
+
 .navbar a {
     float: left;
     color: black;
     padding: 2% 2%;
     text-decoration: none;
 }
-  
+
 .navbar a:hover {
     text-decoration: underline;
 }
 
-.menyText   {
+.menyText {
     font-size: x-large;
 }
 
@@ -79,47 +79,47 @@ div#menyBar {
     flex-direction: row;
     justify-content: center;
 }
-  
+
 .menyLogga a {
     color: black;
     text-decoration: none;
 }
-  
+
 .menyLogga a:hover {
     text-decoration: underline;
 }
 
-#tsoobText  {
+#tsoobText {
     font-size: xx-large;
 }
 
-#shoppingCart   {
+#shoppingCart {
     width: 10%;
     margin: 1%;
 }
 
-.varukorg   {
+.varukorg {
     display: flex;
     justify-content: center;
-    
+
 }
 
-#helSida    {
+#helSida {
     width: 100%;
 }
 
-#reaRuta    {
+#reaRuta {
     margin: 7%;
 }
 
-#rutan  {
+#rutan {
     height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.mönster   {
+.mönster {
     background-color: #BF0A0A;
     width: 33.333%;
     height: 33.333%;
@@ -128,7 +128,7 @@ div#menyBar {
     align-items: center;
 }
 
-.mönsterRuta    {
+.mönsterRuta {
     width: 80%;
     height: 80%;
     background-color: #ac0909;
@@ -136,22 +136,22 @@ div#menyBar {
     justify-content: center;
 }
 
-#mönsterRuta1   {
+#mönsterRuta1 {
     display: flex;
     align-items: flex-end;
 }
 
-#mönsterRuta2   {
+#mönsterRuta2 {
     display: flex;
     align-items: center;
 }
 
-#mönsterRuta3   {
+#mönsterRuta3 {
     display: flex;
     align-items: flex-start;
 }
 
-.rutText    {
+.rutText {
     color: white;
     font-size: x-large;
     display: flex;
@@ -163,11 +163,12 @@ div#menyBar {
     justify-content: center;
 }
 
-.kläderText    {
+.kläderText {
     font-size: xx-large;
     text-decoration: underline;
 }
-div.kläderBar  {
+
+div.kläderBar {
     border-style: none none solid none;
     border-width: 1px;
 }
@@ -177,14 +178,14 @@ div.kläderBar  {
 
 }
 
-.kläderRutan  {
+.kläderRutan {
     border-style: solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#uppKnapp   {
+#uppKnapp {
     float: right;
     margin-bottom: 2%;
     margin-right: 2%;
@@ -201,68 +202,93 @@ div.kläderBar  {
     border-radius: 10%;
 }
 
-.kläder  {
+.kläderMönster div:hover {
+    border-color: red;
+}
+
+.kläder {
     width: 98%;
     border-radius: 10%;
     margin: 1%;
 }
 
-.beskrivning    {
+.beskrivning {
     display: flex;
     flex-direction: column;
     margin-left: 3%;
 }
 
-#infoBakgrund   {
+#infoBakgrund {
     background-color: black;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
-#infoRuta   {
+#infoRuta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
 }
 
-.kontaktaOssText    {
+.kontaktaOssText {
     color: white;
     display: flex;
     justify-content: center;
 }
 
-.logga{
+.logga {
     width: 45%;
     background-color: white;
     border-radius: 20%;
 }
 
-.loggaDiv   {
+.loggaDiv {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#instagram  {
+#instagram {
     display: flex;
     justify-content: flex-end;
 }
 
-#twitter    {
+#twitter {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-#facebook    {
+#facebook {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-#fbPlasering    {
+#fbPlasering {
     display: flex;
     align-items: center;
+}
+
+#sidorPosition {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#bildSidan {
+    width: 50%;
+    height: 100%;
+}
+
+#beskrivningSidan {
+    width: 50%;
+    height: 100%;
+}
+
+#bildPosition {
+    display: flex;
+    justify-content: end;
 }
