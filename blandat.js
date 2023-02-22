@@ -22,14 +22,19 @@ function skapaArtikel(vara) {
     return artikel;
 }
 
-function start() {
-
-    var herrar = document.getElementById("herrar");
-    var items = lager.artiklar.herrar;
+function skapaArtiklar(items, div) {
     for (var i = 0; i < items.length; i++) {
-        herrar.appendChild(skapaArtikel(items[i]));
+        div.appendChild(skapaArtikel(items[i]));
 
     }
+}
+
+function start() {
+
+    skapaArtiklar(lager.artiklar.herrar, document.getElementById("herrar"));
+    skapaArtiklar(lager.artiklar.damer, document.getElementById("damer"));
+    skapaArtiklar(lager.artiklar.barn, document.getElementById("barn"));
+
 }
 
 /**
