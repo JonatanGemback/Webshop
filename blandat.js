@@ -25,25 +25,11 @@ function skapaArtikel(vara) {
 function skapaArtiklar(items, div) {
     for (var i = 0; i < items.length; i++) {
         div.appendChild(skapaArtikel(items[i]));
-
     }
 }
 
 function start() {
-
     skapaArtiklar(lager.artiklar.herrar, document.getElementById("herrar"));
     skapaArtiklar(lager.artiklar.damer, document.getElementById("damer"));
     skapaArtiklar(lager.artiklar.barn, document.getElementById("barn"));
-
 }
-
-/**
-                    <div class="kläderMönster">
-                        <img src="img/brunJacka.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">JACK & JONES</p>
-                            <h4 class="kläderNamn">BRUN JACKA</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
- */
