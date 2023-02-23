@@ -202,10 +202,6 @@ div.kläderBar {
     border-radius: 10%;
 }
 
-.kläderMönster div:hover {
-    border-color: red;
-}
-
 .kläder {
     width: 98%;
     border-radius: 10%;
@@ -278,17 +274,49 @@ div.kläderBar {
     align-items: center;
 }
 
-#bildSidan {
+.bildSidan {
     width: 50%;
-    height: 100%;
+    margin-top: 8%;
 }
 
-#beskrivningSidan {
+.beskrivningSidan {
     width: 50%;
-    height: 100%;
-}
-
-#bildPosition {
+    margin-top: 8%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
+}
+
+.bildPosition {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.beskrivningPosition {
+    display: flex;
+    flex-direction: column;
+}
+
+.menyLoggaVara {
+    display: flex;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menyLoggaVara a {
+    color: black;
+    text-decoration: none;
+}
+
+.menyLoggaVara a:hover {
+    text-decoration: underline;
+}
+
+.kläderMönsterVara {
+    width: 30%;
+    margin: 1%;
+    border-style: solid;
+    border-radius: 10%;
 }

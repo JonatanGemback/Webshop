@@ -11,7 +11,7 @@
     <title>vara</title>
 </head>
 
-<body onload="start()">
+<body onload="startVara()">
     <div id="topMenyBar">
         <div id="topBar">
             <h3 id="fraktText">Fri frakt och retur!</h3>
@@ -19,13 +19,8 @@
             <h3 id="öppetKöpText">100 dagars öppet köp!</h3>
         </div>
         <div id="menyBar">
-            <div class="navbar">
-                <a href="#manText" class="menyText">Man</a>
-                <a href="#kvinnaText" class="menyText">Kvinnor</a>
-                <a href="#barnText" class="menyText">Barn</a>
-            </div>
-            <div class="menyLogga">
-                <a href="#top" id="tsoobText">TSOOB</a>
+            <div class="menyLoggaVara">
+                <a href="index.html" id="tsoobText">TSOOB</a>
             </div>
             <div>
                 <a href="#shoppingCart" class="varukorg"><img src="img/shopping_cart.png" id="shoppingCart"></a>
@@ -33,13 +28,28 @@
         </div>
     </div>
     <div id="sidorPosition">
-        <div id="bildSidan">
-            <div id="bildPosition">
-                h
-            </div>
+    </div>
+    <form id="uppKnapp">
+        <input type="BUTTON" value="↑" onclick="window.location.href='#top'">
+    </form>
+    <div id="infoBakgrund">
+        <div class="loggaDiv">
+            <a href="https://www.instagram.com/" id="instagram"><img src="img/ig.png" class="logga"></a>
         </div>
-        <div id="beskrivningSidan">
-
+        <div id="fbPlasering">
+            <a href="https://www.facebook.com/" id="facebook"><img src="img/fb.png" class="logga"></a>
+        </div>
+        <div id="infoRuta">
+            <h3 class="kontaktaOssText">KONTAKTA OSS</h3>
+            <a class="kontaktaOssText">Adress: Lägerhyddsvägen 2</a>
+            <a class="kontaktaOssText">Ring oss: +46 76 564 32 76</a>
+            <a class="kontaktaOssText" href="mailto:someone@example.com">Maila oss</a>
+        </div>
+        <div id="twitter">
+            <a href="https://www.twitter.com/"><img src="img/twitter.png" class="logga"></a>
+        </div>
+        <div class="loggaDiv">
+            <a href="https://www.youtube.com/"><img src="img/yt.png" class="logga"></a>
         </div>
     </div>
 </body>
