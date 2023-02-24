@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="lager.js"></script>
+    <script src="blandat.js"></script>
     <title>Webshoppen</title>
 </head>
-<body>
+
+<body onload="start()">
     <div id="topMenyBar">
         <div id="topBar">
             <h3 id="fraktText">Fri frakt och retur!</h3>
@@ -21,10 +25,7 @@
                 <a href="#barnText" class="menyText">Barn</a>
             </div>
             <div class="menyLogga">
-                <a href="#top" id="tsoobText">TSOOB</a>
-            </div>
-            <div>
-                <a href="#shoppingCart" class="varukorg"><img src="img/shopping_cart.png" id="shoppingCart"></a>
+                <a href="index.html" id="tsoobText">TSOOB</a>
             </div>
         </div>
     </div>
@@ -73,114 +74,18 @@
         </div>
         <div>
             <div class="kläderBox">
-                <div class="kläderRutan">
-                    <div class="kläderMönster">
-                        <img src="img/brunJacka.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">JACK & JONES</p>
-                            <h4 class="kläderNamn">BRUN JACKA</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/vitStickadPoloTröja.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/svartJacka.jfif" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/brunStickadPoloTröja.jfif" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/rödJacka.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/vitSkjorta.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
+                <div id="herrar" class="kläderRutan">
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
     <div>
         <div class="kläderBar">
             <h2 id="kvinnaText" class="kläderText">KVINNA</h2>
         </div>
         <div>
             <div class="kläderBox">
-                <div class="kläderRutan">
-                    <div class="kläderMönster">
-                        <img src="img/grönGulKlänning.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/brunKvinnligJacka.webp" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/kavaj.jfif" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/kvinnaSvartTröja.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/rödTjocktröja.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/vitKvinnligSkjorta.webp" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>                                
+                <div id="damer" class="kläderRutan">
                 </div>
             </div>
         </div>
@@ -191,55 +96,7 @@
         </div>
         <div>
             <div class="kläderBox">
-                <div class="kläderRutan">
-                    <div class="kläderMönster">
-                        <img src="img/bebisKläder.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/barnMjukisKläder.webp" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/dinoTröja.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/barnRödKlänning.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/barnGråTröja.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
-                    <div class="kläderMönster">
-                        <img src="img/barnPyjamas.jpg" class="kläder">
-                        <div class="beskrivning">
-                            <p class="märke">GANT</p>
-                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
-                            <h3>$70</h3>
-                        </div>
-                    </div>
+                <div id="barn" class="kläderRutan">
                 </div>
             </div>
         </div>
@@ -268,4 +125,5 @@
         </div>
     </div>
 </body>
+
 </html>
