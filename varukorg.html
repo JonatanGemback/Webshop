@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+    <script src="shoppingCart.js"></script>
+    <title>Varukorg</title>
+</head>
+
+<body>
+
+    <div id="topMenyBar">
+        <div id="topBar">
+            <h3 id="fraktText">Fri frakt och retur!</h3>
+            <h2 id="rabattText">JUST NU 20-50% RABATT PÅ UTVALDA PRDUKTER!</h2>
+            <h3 id="öppetKöpText">100 dagars öppet köp!</h3>
+        </div>
+        <div id="menyBar">
+            <div class="navbar">
+                <a href="#manText" class="menyText">Man</a>
+                <a href="#kvinnaText" class="menyText">Kvinnor</a>
+                <a href="#barnText" class="menyText">Barn</a>
+            </div>
+            <div class="menyLogga">
+                <a href="index.html" id="tsoobText">TSOOB</a>
+            </div>
+            <div class="varukorg">
+                <a href="varukorg.html" class="varukorg"><img src="img/shopping_cart.png" alt="Varukorg"
+                        id="shoppingCart"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="cartContainer">
+        <h2>Shopping Cart</h2>
+        <ul id="cart"></ul>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+
+        </tbody>
+    </table>
+    <a href="index.html">Continue shopping</a>
+    <button onclick="clearCart()">Clear cart</button>
+    <div id="out">
+        <button onclick="alert('TACK FÖR DITT KÖP'), clearCart()">BESTÄLL</button>
+    </div>
+</body>
+
+</html>

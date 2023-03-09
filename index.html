@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="lager.js"></script>
-    <script src="blandat.js"></script>
+    <script src="cart.js"></script>
     <title>Webshoppen</title>
 </head>
 
-<body onload="start()">
+<body>
     <div id="topMenyBar">
         <div id="topBar">
             <h3 id="fraktText">Fri frakt och retur!</h3>
@@ -26,6 +25,10 @@
             </div>
             <div class="menyLogga">
                 <a href="index.html" id="tsoobText">TSOOB</a>
+            </div>
+            <div class="varukorg">
+                <a href="varukorg.html" class="varukorg"><img src="img/shopping_cart.png" alt="Varukorg"
+                        id="shoppingCart"></a>
             </div>
         </div>
     </div>
@@ -72,9 +75,73 @@
         <div class="kläderBar">
             <h2 id="manText" class="kläderText">MAN</h2>
         </div>
-        <div>
-            <div class="kläderBox">
-                <div id="herrar" class="kläderRutan">
+        <div class="kläderBox">
+            <div class="kläderRutan">
+                <div class="kläderMönster">
+                    <img src="img/brunJacka.jpg" class="kläder">
+                    <div class="beskrivning">
+                        <p class="märke">JACK & JONES</p>
+                        <h4 class="kläderNamn">BRUN JACKA</h4>
+                        <h3>$70</h3>
+                        <div id="knappDiv">
+                            <button onclick="addToCart('BRUN JACKA', 70)" id="köpKnapp">KÖP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="kläderMönster">
+                    <img src="img/vitStickadPoloTröja.jpg" class="kläder">
+                    <div class="beskrivning">
+                        <p class="märke">GANT</p>
+                        <h4 class="kläderNamn">VIT STICKAD POLOTRÖJA</h4>
+                        <h3>$40</h3>
+                        <div id="knappDiv">
+                            <button onclick="addToCart('VIT STICKAD POLOTRÖJA', 40)" id="köpKnapp">KÖP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="kläderMönster">
+                    <img src="img/svartJacka.jfif" class="kläder">
+                    <div class="beskrivning">
+                        <p class="märke">LYLE & SCOTT</p>
+                        <h4 class="kläderNamn">SVART BOMBERJACKA</h4>
+                        <h3>$80</h3>
+                        <div id="knappDiv">
+                            <button onclick="addToCart('SVART BOMBERJACKA', 80)" id="köpKnapp">KÖP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="kläderMönster">
+                    <img src="img/brunStickadPoloTröja.jfif" class="kläder">
+                    <div class="beskrivning">
+                        <p class="märke">RILEY</p>
+                        <h4 class="kläderNamn">BRUN STICKAD POLOTRÖJA</h4>
+                        <h3>$40</h3>
+                        <div id="knappDiv">
+                            <button onclick="addToCart('BRUN STICKAD POLOTRÖJA', 40)" id="köpKnapp">KÖP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="kläderMönster">
+                    <img src="img/rödJacka.jpg" class="kläder">
+                    <div class="beskrivning">
+                        <p class="märke">H&M</p>
+                        <h4 class="kläderNamn">RÖD SKJORTA</h4>
+                        <h3>$25</h3>
+                        <div id="knappDiv">
+                            <button onclick="addToCart('RÖD SKJORTA', 25)" id="köpKnapp">KÖP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="kläderMönster">
+                    <img src="img/vitSkjorta.jpg" class="kläder">
+                    <div class="beskrivning">
+                        <p class="märke">GANT</p>
+                        <h4 class="kläderNamn">VIT SKJORTA</h4>
+                        <h3>$90</h3>
+                        <div id="knappDiv">
+                            <button onclick="addToCart('RÖD SKJORTA', 90)" id="köpKnapp">KÖP</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,7 +152,73 @@
         </div>
         <div>
             <div class="kläderBox">
-                <div id="damer" class="kläderRutan">
+                <div class="kläderRutan">
+                    <div class="kläderMönster">
+                        <img src="img/grönGulKlänning.jpg" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">GANT</p>
+                            <h4 class="kläderNamn">NEON GRÖN KLÄNNING</h4>
+                            <h3>$70</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('NEON GRÖN KLÄNNING', 70)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/brunKvinnligJacka.webp" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">LES DUEX</p>
+                            <h4 class="kläderNamn">BEIGE KAPPA</h4>
+                            <h3>$110</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('BEIGE KAPPA', 110)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/kavaj.jfif" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">ZARA</p>
+                            <h4 class="kläderNamn">BLÅ KAVAJ</h4>
+                            <h3>$40</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('BLÅ KAVAJ', 40)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/kvinnaSvartTröja.jpg" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">GUCCI</p>
+                            <h4 class="kläderNamn">SVART LÅNGÄRMAD TRÖJA</h4>
+                            <h3>$700</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('SVART LÅNGÄRMAD TRÖJA', 700)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/rödTjocktröja.jpg" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">GUCCI</p>
+                            <h4 class="kläderNamn">RÖD STICKAD TRÖJA</h4>
+                            <h3>$870</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('RÖD STICKAD TRÖJA', 870)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/vitKvinnligSkjorta.webp" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">GANT</p>
+                            <h4 class="kläderNamn">VIT SKJORTA</h4>
+                            <h3>$80</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('VIT SKJORTA', 80)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,7 +229,73 @@
         </div>
         <div>
             <div class="kläderBox">
-                <div id="barn" class="kläderRutan">
+                <div class="kläderRutan">
+                    <div class="kläderMönster">
+                        <img src="img/bebisKläder.jpg" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">LINDEX</p>
+                            <h4 class="kläderNamn">BARNKLÄDER</h4>
+                            <h3>$10</h3>¨
+                            <div id="knappDiv">
+                                <button onclick="addToCart('BARNKLÄDER', 10)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/barnMjukisKläder.webp" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">TOMMY HILFIGER</p>
+                            <h4 class="kläderNamn">MJUKISSTÄLL</h4>
+                            <h3>$80</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('MJUKISSTÄLL', 80)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/dinoTröja.jpg" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">H&M</p>
+                            <h4 class="kläderNamn">T-SHIRT</h4>
+                            <h3>$10</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('T-SHIRT', 10)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/barnRödKlänning.jpg" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">LINDEX</p>
+                            <h4 class="kläderNamn">RÖD KLÄNNING</h4>
+                            <h3>$40</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('RÖD KLÄNNING', 40)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/barnGråTröja.jpg" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">GUCCI</p>
+                            <h4 class="kläderNamn">TJOCKTRÖJA</h4>
+                            <h3>$450</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('TJOCKTRÖJA', 450)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kläderMönster">
+                        <img src="img/barnPyjamas.jpg" class="kläder">
+                        <div class="beskrivning">
+                            <p class="märke">CUBUS</p>
+                            <h4 class="kläderNamn">PYJAMAS</h4>
+                            <h3>$20</h3>
+                            <div id="knappDiv">
+                                <button onclick="addToCart('PYJAMAS', 20)" id="köpKnapp">KÖP</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
