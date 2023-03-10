@@ -32,3 +32,8 @@ function clearCart() {
         cartItems.removeChild(cartItems.firstChild);
     }
 }
+
+function kop() {
+    alert('TACK FÖR DITT KÖP')
+    clearCart()
+}
